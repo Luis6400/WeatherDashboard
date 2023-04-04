@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <!-- <nav class="navbar is-primary has-shadow">
+            <div class="navbar-brand navbar-item">
+                <a class="navbar-item">
+                    <img src="./assets/cloudy.png" style="max-height: 80px;" alt="sun and cloud icon">
+                    <p class="is-size-2 has-text-weight-2">WeatherDash</p>
+                </a>
+            </div>
+        </nav> -->
+
+    <header class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    WeatherDash
+                </h1>
+                <h2 class="subtitle">
+                    A simple weather app
+                </h2>
+            </div>
+        </div>
+    </header>
+
+
+    <section style="min-height: 400px;" id="searchcard" class="container has-text-centered">
+
+        <div class="field">
+            <label class="label mt-2">City</label>
+            <input id="cityinput" style="max-width: 400px;" class="input is-primary" type="text">
+            <!-- <label class="label mt-2">State</label>
+            <select id="stateinput" class="select" name="State" id="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="PR">PR</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select> -->
+        </div>
+        <button id="gobutton" style="max-width: 70px;" class="button mt-2 is-primary is-family-primary">GO</button>
+
+    </section>
+
+    <section style="min-height: 400px;" id="weathercard" class="container is-primary">
+
+        <p id="citytitle" class="title is-family-primary is-size-1"></p>
+
+        <div class="columns">
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-4 date"></p>
+                        <p class="subtitle img"></p>
+                        <p class="subtitle is-size-6 condition"></p>
+                        <p class="subtitle is-size-6 temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-4 date"></p>
+                        <p class="subtitle img"></p>
+                        <p class="subtitle is-size-6 condition"></p>
+                        <p class="subtitle is-size-6 temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-4 date"></p>
+                        <p class="subtitle img"></p>
+                        <p class="subtitle is-size-6 condition"></p>
+                        <p class="subtitle is-size-6 temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-4 date"></p>
+                        <p class="subtitle img"></p>
+                        <p class="subtitle is-size-6 condition"></p>
+                        <p class="subtitle is-size-6 temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-4 date"></p>
+                        <p class="subtitle img"></p>
+                        <p class="subtitle is-size-6 condition"></p>
+                        <p class="subtitle is-size-6 temp"></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Recents -->
+    <div class="has-text-centered mt-6">
+        <p style="background-color: grey; min-width: 100%; color: white;" class="title is-primary is-size-2">Recents</p>
+    </div>
+    <section class="container has-text-centered">
+        <div id="recentstable" class="columns">
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-size-4">City</p>
+                        <p class="recents-city"></p>
+                        <p class="subtitle is-size-6">State</p>
+                        <p class="recents-state"></p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/JS/script.js"></script>
+
+</body>
+
+</html>
